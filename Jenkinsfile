@@ -17,7 +17,7 @@ pipeline {
             stage('Deploy'){
                 steps{
                     sh 'cp -r $WORKSPACE/build /var/jenkins_home/workspace'
-                    sh 'curl -u admin:admin http://35.192.17.97:8888/manager/reload?path=/build'
+                    sh 'curl -u admin:admin http://35.125.158.193:8888/manager/reload?path=/build'
                 }
             }
             }
